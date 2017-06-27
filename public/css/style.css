@@ -1,0 +1,509 @@
+.body{
+  margin:0px;
+  padding:0px;
+  font-family:roboto slab;
+}
+
+.row{
+  margin:0px;
+  padding:0px;
+}
+
+.col-md-2{
+  background-color:#28454F;
+  margin:0px;
+  padding:0px;
+  word-wrap:break-word;
+}
+
+.contentWrapper{
+  padding:4%;
+}
+
+.col-md-10{
+  margin:0px;
+  padding:0px;
+}
+
+ul{
+  padding:0px;
+  margin:0px;
+}
+
+li{
+  list-style-type:none;
+}
+
+p{
+  margin:0px;
+  font-size:16px;
+  color:#1F2023;
+}
+
+hr{
+  color:#BAC1C0;
+}
+
+.mainHeader{
+  font-size:30px;
+  width:100%;
+  text-align:center;
+  margin:10px 0 30px 0;
+  color:#28454F;
+}
+
+.bannerPhoto{
+  max-width:100%;
+  max-height:100%;
+  width:inherit;
+  height:inherit;
+}
+
+.bannerPhotoBox{
+  position:relative;
+  width:100%;
+  max-height:300px;
+  overflow-y: hidden;
+}
+
+/* Menu */
+
+.menuWrapper{
+  padding:5px;
+}
+
+.menuWrapper ul{
+  -webkit-padding-start:25px;
+}
+
+.menuWrapper ul li{
+  margin:12px 0 0px 0;
+}
+
+.menuWrapper ul li a{
+  color:#DEE3E2;
+  text-decoration-style: none;
+  text-decoration:none;
+}
+
+.menuWrapper h1{
+  margin:20px 0 40px 0;
+  font-size:24px;
+}
+
+.menuWrapper h1 a{
+  text-decoration:none;
+  color:#DEE3E2;
+}
+
+/* Meer ontdekken */
+
+.meerontdekkenWrapper{
+  border-top:solid #f1f1f1 2px;
+/*  margin:0px 0 20px 0;*/
+  padding:1%;
+}
+
+.meerontdekkenText{
+  padding:0 30px 0 30px;
+  margin:10px 0 20px 0;
+}
+
+.mainButton{
+  font-size:16px;
+  color:#FFFFFF;
+  letter-spacing:0px;
+  line-height:40px;
+  background: #798E8D;
+  border-radius: 100px;
+  width:150px;
+  height:40px;
+  text-align:center;
+  display:inline-block;
+  margin:5px 10px 5px 10px;
+}
+
+.buttonWrapper{
+  text-align:center;
+  padding:10px;
+}
+
+/* Footer */
+
+.footerWrapper{
+  background-color:#f1f1f1;
+}
+
+.footerWrapper p{
+  padding:30px 0 30px 30px;
+  color:#BAC1C0;
+}
+
+/* Index Page*/
+
+#indexBannerPhotoBox{
+  position:relative;
+  width:100%;
+  max-height:400px;
+  overflow-y: hidden;
+}
+
+#indexBannerPhoto{
+  max-width:100%;
+  max-height:100%;
+  width:inherit;
+  height:inherit;
+}
+
+#indexBannerTextBox{
+  position:absolute;
+  text-align:center;
+  width:100%;;
+  font-style:bold;
+  color:#DEE3E2;
+  word-wrap:break-word;
+  top:40%;
+  transform:translateY(-50%);
+}
+
+#indexBannerTextBox h2{
+  font-size:24px;
+  font-style:italic;
+}
+
+#selfieContainer{
+  position:relative;
+  width:100%;
+  text-align:center;
+}
+
+#selfie{
+  width:inherit;
+  height:inherit;
+  margin:30px auto;
+  width:100%;
+}
+
+/* Homeopathie page */
+
+.pictureText{
+  font-size:14px;
+  color:#BAC1C0;
+}
+
+.homeopathiePictureContainer{
+  position:relative;
+  width:100%;
+  text-align:center;
+}
+
+.homeopathiePicture{
+  width:inherit;
+  height:inherit;
+  max-height:400px;
+  margin:30px auto;
+  width:100%;
+}
+
+/* Behandelingen Page */
+
+#behandelingenWrapper{
+  background-color:#f1f1f1;
+  padding:20px;
+}
+
+.behandelingenBlock{
+  padding:40px;
+  margin:30px;
+  background-color:#FFFFFF;
+}
+
+.leesmeerButton{
+  float:right;
+  color:#798E8D;
+}
+
+.leesmeerButton:hover{
+  color:#28454F;
+  text-decoration:none;
+}
+
+.icon{
+  width:100%;
+  text-align:center;
+}
+
+/* Contact Page */
+
+.contactInformation{
+  margin:20px;
+  padding:20px;
+}
+
+.contactHeader{
+  margin:0px 0 30px 0;
+  color:#28454F;
+  font-size:30px;
+}
+
+.contactInformation ul{
+  margin:30px 0;
+}
+
+.contactInformation ul li{
+  margin:5px 0 5px 0;
+  font-size:16px;
+}
+
+.contactInput{
+  padding:20px;
+}
+
+.contactInput li{
+  margin:20px;
+}
+
+#contactFormButton{
+  font-size:16px;
+  color:#FFFFFF;
+  letter-spacing:0px;
+  line-height:40px;
+  background: #798E8D;
+  border-radius: 100px;
+  margin-bottom:20px;
+  width:150px;
+  height:40px;
+  text-align:center;
+  float:right;
+}
+
+::-webkit-input-placeholder{
+  color:#BAC1C0;
+}
+
+
+.contactInput li input, textarea{
+  background:#FAFAFA;
+  border:1px solid #DEE3E2;
+  width:100%;
+  padding:5px;
+}
+
+/* -------------------------- BACK END -------------------------- */
+
+/* General */
+
+
+
+/* Menu */
+
+.pageSwitcher{
+  font-size:0px;
+}
+
+.pageSwitcher a{
+  height:32px;
+  line-height:32px;
+  font-size:16px;
+  display:inline-block;
+  width:50%;
+  text-align:center;
+  color:#000;
+  text-decoration:none;
+}
+
+.onPage {
+  background-color:#375f6d;
+}
+
+.backMenu{
+  height:100vh;
+  background-color:#28454F;
+  font-family:'Raleway';
+}
+
+.userInfo{
+  background-color:#375f6d;
+  padding:10px;
+}
+
+.userLeftColumn{
+  text-align:center;
+}
+
+.userLeftColumn a{
+  text-decoration:none;
+  color:#f1f1f1;
+}
+
+.userRightColumn{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.userRightColumn h2{
+  font-size:18px;
+  text-align:center;
+}
+
+.userRightColumn h1{
+  font-size:26px;
+  text-align:center;
+}
+
+.userPicture{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+}
+
+.visible{
+  display:none;
+}
+
+.menu{
+  color:black;
+}
+
+.menu ul li{
+  width:100%;
+  float:right;
+  cursor:pointer;
+}
+
+.togglePagesMenu li a{
+  width:auto;
+  display:block;
+  text-decoration:none;
+  color:#f1f1f1;
+  padding-left:30px;
+}
+
+/* Edit Page */
+
+.editPage{
+  width:100%;
+  background-color:#375f6d;
+}
+
+.fieldBox{
+  width:100%;
+  padding:20px;
+  margin:0 auto;
+  background-color:#f1f1f1;
+  color:#375f6d;
+}
+
+.fieldBox div{
+  width:80%;
+  margin:0 auto;
+}
+
+.label{
+  display:block;
+  font-size:26px;
+  padding:10px;
+}
+
+.stringInput{
+  width:100%;
+  padding:10px;
+}
+
+.textInput{
+  width:100%;
+  padding:10px;
+  margin:0 auto;
+}
+
+.editButton{
+  width:100%;
+  background:#28454F;
+  padding:10px;
+  font-size:20px;
+  display:block;
+  width:100%;
+  border:none;
+  color:#f1f1f1;
+  border-radius:5px;
+  font-family:'Raleway';
+}
+
+.editButton:hover{
+  background-color:#375f6d;
+  cursor:pointer;
+}
+
+/* Login page */
+
+.loginWrapper{
+  background-color:#f1f1f1;
+  border-radius:10px;
+  margin-top:20%;
+  font-family:'Raleway';
+}
+
+.loginWrapper div{
+  padding:20px;
+}
+
+.loginHeader{
+  text-align:center;
+  color:#28454F;
+}
+
+.loginButton{
+  width:100%;
+  background:#28454F;
+  padding:10px;
+  font-size:20px;
+  display:block;
+  width:100%;
+  border:none;
+  color:#f1f1f1;
+  border-radius:5px;
+  font-family:'Raleway';
+}
+
+.loginButton:hover{
+  background-color:#375f6d;
+  cursor:pointer;
+}
+
+.rememberButton{
+  color:#28454F;
+  margin-top:20px;
+}
+
+.formField{
+  margin:0px;
+  padding:7px 5px;
+  width:100%;
+  display:block;
+  font-size:18px;
+  border-radius:5px;
+  border:none;
+  -webkit-transition:0.3s linear;
+  -moz-transition:0.3s linear;
+  -o-transition:0.3s linear;
+  transition:0.3s linear;
+  font-family:'Raleway';
+}
+
+.forgotPassword{
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  text-align:center;
+  background-color:#e6e6e6;
+}
+
+.forgotPassword a{
+  text-decoration: none !important;
+  color:#28454F;
+  font-size:14px;
+}
+
