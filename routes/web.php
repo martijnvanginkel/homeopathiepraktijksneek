@@ -36,8 +36,8 @@ Route::put('/homeopathiebewerken', 'HomeopathieController@update')->name('homeop
 Route::get('/praktijkbewerken', 'PraktijkController@edit')->name('praktijk.edit');
 Route::put('/praktijkbewerken', 'PraktijkController@update')->name('praktijk.update');
 
-Route::get('/behandelingenbewerken', 'behandelingenController@edit')->name('behandelingen.edit');
-Route::put('/behandelingenbewerken', 'behandelingenController@update')->name('behandelingen.update');
+Route::get('/behandelingenbewerken', 'BehandelingenController@edit')->name('behandelingen.edit');
+Route::put('/behandelingenbewerken', 'BehandelingenController@update')->name('behandelingen.update');
 
 Route::get('/kostenbewerken', 'KostenController@edit')->name('kosten.edit');
 Route::put('/kostenbewerken', 'KostenController@update')->name('kosten.update');
