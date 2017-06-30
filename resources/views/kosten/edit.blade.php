@@ -2,6 +2,13 @@
 
 @section('content')
 
+<style>
+  .fieldbox3{
+    width:33%;
+    float:left;
+  }
+</style>
+
 <form method="POST" action="{{ route('kosten.update', $kosten->id) }}">
 
     <div class="fieldBox">
