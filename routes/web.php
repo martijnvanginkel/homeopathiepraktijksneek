@@ -39,8 +39,8 @@ Route::put('/praktijkbewerken', 'PraktijkController@update')->name('praktijk.upd
 Route::get('/behandelingenbewerken', 'behandelingenController@edit')->name('behandelingen.edit');
 Route::put('/behandelingenbewerken', 'behandelingenController@update')->name('behandelingen.update');
 
-Route::get('/kostenbewerken', 'kostenController@edit')->name('kosten.edit');
-Route::put('/kostenbewerken', 'kostenController@update')->name('kosten.update');
+Route::get('/kostenbewerken', 'KostenController@edit')->name('kosten.edit');
+Route::put('/kostenbewerken', 'KostenController@update')->name('kosten.update');
 
 Route::get('/contactbewerken', 'contactController@edit')->name('contact.edit');
 Route::put('/contactbewerken', 'contactController@update')->name('contact.update');
