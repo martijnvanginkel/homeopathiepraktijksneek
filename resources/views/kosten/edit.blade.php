@@ -26,7 +26,7 @@
     <div class="fieldbox">
       
       <!-- behandeling 1 -->
-      <div class="fieldbox3" style="width:30%">
+      <div class="fieldbox3">
         <label name="behandeling01" class="label">Behandeling:</label>
         <input class="stringInput" name="behandeling01" value="{{$kosten->behandeling01}}" />
       </div>
