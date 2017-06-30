@@ -7,9 +7,9 @@
 
 
 <div class="contentWrapper">
-  <h1 class="mainHeader">hoi</h1>
+  <h1 class="mainHeader"> {{ $kosten->title }} </h1>
 
-  <p>asdfk;</p>
+  <p>{!! nl2br(e($kosten->paragraph)) !!}</p>
 
 
 
@@ -23,20 +23,26 @@
     </thead>
     <tbody>
       <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <td> {{ $kosten->behandeling01 }} </td>
+        <td> {{ $kosten->duur01 }} </td>
+        <td> {{ $kosten->prijs01 }} </td>
       </tr>
       <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
+        <td> {{ $kosten->behandeling02 }} </td>
+        <td> {{ $kosten->duur02 }} </td>
+        <td> {{ $kosten->prijs02 }} </td>
       </tr>
       <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
+        <td> {{ $kosten->behandeling03 }} </td>
+        <td> {{ $kosten->duur03 }} </td>
+        <td> {{ $kosten->prijs03 }} </td>
       </tr>
+      <tr>
+        <td> {{ $kosten->behandeling04 }} </td>
+        <td> {{ $kosten->duur04 }} </td>
+        <td> {{ $kosten->prijs04 }} </td>
+      </tr>
+
     </tbody>
   </table>
 

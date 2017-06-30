@@ -5,6 +5,11 @@
 <form method="POST" action="{{ route('contact.update', $contact->id) }}">
 
     <div class="fieldBox">
+      <label name="image"></label>
+      <input type="file" name="image" accept="image"/>
+    </div>
+
+    <div class="fieldBox">
       <div>
         <label name="name" class="label">Naam:</label>
         <input class="stringInput" name="name" value="{{$contact->name}}" />

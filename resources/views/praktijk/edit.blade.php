@@ -5,6 +5,11 @@
 <form method="POST" action="{{ route('praktijk.update', $praktijk->id) }}">
 
     <div class="fieldBox">
+      <label name="image"></label>
+      <input type="file" name="image" accept="image"/>
+    </div>
+
+    <div class="fieldBox">
       <div>
         <label name="title" class="label">Titel:</label>
         <input class="stringInput" name="title" value="{{$praktijk->title}}" />

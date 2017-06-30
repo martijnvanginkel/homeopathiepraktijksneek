@@ -8,6 +8,7 @@ use App\Behandelingen;
 use App\Meerontdekken;
 use App\Praktijk;
 use App\Contact;
+use App\Kosten;
 
 class PagesController extends Controller{
 
@@ -42,7 +43,9 @@ class PagesController extends Controller{
 
   public function getKosten()
   {
-    return view('pages.kosten');
+    $kosten = Kosten::first();
+
+    return view('pages.kosten')->with('kosten', $kosten);
   }
 
   public function getContact()
