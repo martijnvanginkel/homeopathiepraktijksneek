@@ -42,8 +42,8 @@ Route::put('/behandelingenbewerken', 'behandelingenController@update')->name('be
 Route::get('/kostenbewerken', 'KostenController@edit')->name('kosten.edit');
 Route::put('/kostenbewerken', 'KostenController@update')->name('kosten.update');
 
-Route::get('/contactbewerken', 'contactController@edit')->name('contact.edit');
-Route::put('/contactbewerken', 'contactController@update')->name('contact.update');
+Route::get('/contactbewerken', 'ContactController@edit')->name('contact.edit');
+Route::put('/contactbewerken', 'ContactController@update')->name('contact.update');
 
 
 //Auth
