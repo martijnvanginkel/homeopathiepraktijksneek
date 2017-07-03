@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Index;
+use File;
 
 class IndexController extends Controller
 {
@@ -29,6 +30,37 @@ class IndexController extends Controller
 
       $index->save();
 
+      if($request->hasFile('index')){
+        if(file_exists( public_path() . '/storage/indexes/' . 'index.jpg')) {
+          
+          File::Delete(public_path() . '/storage/indexes/' . 'index.jpg');
+          $file = request()->file('index');
+          $file->storeAs('indexes/', 'index.jpg', 'public');
+
+        }else{
+          
+          $file = request()->file('index'); 
+          $file->storeAs('indexes/', 'index.jpg', 'public');
+          
+        }
+      }
+
+
+      if($request->hasFile('index2')){
+        if(file_exists( public_path() . '/storage/indexes/' . 'index2.jpg')) {
+          
+          File::Delete(public_path() . '/storage/indexes/' . 'index2.jpg');
+          $file = request()->file('index2');
+          $file->storeAs('indexes/', 'index2.jpg', 'public');
+          
+
+        }else{
+          
+          $file = request()->file('index');
+          $file->storeAs('indexes/', 'index2.jpg', 'public');
+          
+        }
+      }
       return redirect()->route('index.edit', $index->id);
     }
 

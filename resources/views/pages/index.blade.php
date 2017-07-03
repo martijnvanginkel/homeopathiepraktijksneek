@@ -7,8 +7,8 @@
     <h1>Homeopathiepraktijk Sneek</h1>
     <h2>Kom in je kracht</h2>
   </div>
-  <img src="{{ URL::asset('img/flower.jpg') }}" id="indexBannerPhoto"/>
-</div>
+    <img src="{{ URL::asset('storage/indexes/index.jpg') }} " id="indexBannerPhoto"/>
+  </div>
 
 <div class="contentWrapper">
   <h1 class="mainHeader">{{$index->title}}</h1>
@@ -17,7 +17,7 @@
   <div class="row">
     <div class="col-lg-6">
       <div id="selfieContainer">
-        <img src="{{URL::asset('img/placeholder.png')}}" id="selfie"/>
+        <img src="{{URL::asset('storage/indexes/index2.jpg')}}" id="selfie"/>
       </div>
     </div>
     <div class="col-lg-6">

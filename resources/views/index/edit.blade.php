@@ -5,8 +5,13 @@
 <form method="POST" action="{{ route('index.update', $index->id) }}" enctype="multipart/form-data">
 
     <div class="fieldBox">
-      <label name="image"></label>
-      <input type="file" name="image" accept="image"/>
+      <label name="index">Banner</label>
+      <input type="file" name="index" accept="index" />
+    </div>
+
+    <div class="fieldBox">
+      <label name="index2">Profielfoto</label>
+      <input type="file" name="index2" accept="index2" />
     </div>
 
     <div class="fieldBox">
