@@ -7,7 +7,7 @@
     <h1>Homeopathiepraktijk Sneek</h1>
     <h2>Kom in je kracht</h2>
   </div>
-    <img src="{{ URL::storage('/indexes/index.jpg') }} " id="indexBannerPhoto"/>
+    <img src="{{ URL::asset('storage/indexes/index.jpg') }} " id="indexBannerPhoto"/>
   </div>
 
 <div class="contentWrapper">
