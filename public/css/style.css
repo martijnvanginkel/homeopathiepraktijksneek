@@ -72,6 +72,7 @@ table{
 }
 
 .behandelingPhoto{
+  position:relative;
   max-width:100%;
   max-height:100%;
   width:inherit;
@@ -79,6 +80,7 @@ table{
 }
 
 .behandelingPhotoBox{
+  position:relative;
   max-height:150px;
   max-width:200px;
   width:100%;
@@ -222,7 +224,6 @@ table{
   height:inherit;
   max-height:300px;
   margin:30px auto;
-  width:100%;
 }
 
 /* Behandelingen Page */
