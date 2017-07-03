@@ -14,7 +14,7 @@
   <div class="row">
     <div class="col-md-8">
       <div class="homeopathiePictureContainer">
-        <img src="{{ URL::asset('storage/homeopathies/homeopathie2.jpg') }}" class="homeopathiePicture">
+        <img src="{{ URL::asset('storage/homeopathies/homeopathie2.jpg') }}" class="homeopathiePicture" style="width:60%">
       </div>
     </div>
     <div class="col-md-4">
