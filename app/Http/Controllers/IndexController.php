@@ -56,11 +56,12 @@ class IndexController extends Controller
 
         }else{
           
-          $file = request()->file('index');
+          $file = request()->file('index2');
           $file->storeAs('indexes/', 'index2.jpg', 'public');
           
         }
       }
+      
       return redirect()->route('index.edit', $index->id);
     }
 

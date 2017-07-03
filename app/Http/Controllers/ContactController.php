@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Contact;
+use File;
 
 class ContactController extends Controller
 {
@@ -28,6 +29,22 @@ class ContactController extends Controller
     $contact->phonenumber = $request->phonenumber;
 
     $contact->save();
+
+    if($request->hasFile('contact')){
+      if(file_exists( public_path() . '/storage/contacts/' . 'contact.jpg')) {
+        
+        File::Delete(public_path() . '/storage/contacts/' . 'contact.jpg');
+        $file = request()->file('contact');
+        $file->storeAs('contacts/', 'contact.jpg', 'public');
+        
+
+      }else{
+        
+        $file = request()->file('contact');
+        $file->storeAs('contacts/', 'contact.jpg', 'public');
+        
+      }
+    }
 
     return redirect()->route('contact.edit', $contact->id);
   }

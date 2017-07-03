@@ -2,11 +2,11 @@
 
 @section('content')
 
-<form method="POST" action="{{ route('contact.update', $contact->id) }}">
+<form method="POST" action="{{ route('contact.update', $contact->id) }}" enctype="multipart/form-data">
 
     <div class="fieldBox">
-      <label name="image"></label>
-      <input type="file" name="image" accept="image"/>
+      <label name="contact"></label>
+      <input type="file" name="contact" accept="contact"/>
     </div>
 
     <div class="fieldBox">

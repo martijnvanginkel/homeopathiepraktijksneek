@@ -2,8 +2,9 @@
 
 @section('content')
 
-@include('partials._bannerphoto')
-
+<div class="bannerPhotoBox">
+    <img src="{{ URL::asset('storage/contacts/contact.jpg') }} " class="bannerPhoto" />
+</div>
 
 <div class="row">
 

@@ -2,11 +2,16 @@
 
 @section('content')
 
-<form method="POST" action="{{ route('homeopathie.update', $homeopathie->id) }}">
+<form method="POST" action="{{ route('homeopathie.update', $homeopathie->id) }}" enctype="multipart/form-data">
 
     <div class="fieldBox">
-      <label name="image"></label>
-      <input type="file" name="image" accept="image"/>
+      <label name="homeopathie">Banner</label>
+      <input type="file" name="homeopathie" accept="homeopathie"/>
+    </div>
+
+    <div class="fieldBox">
+      <label name="homeopathie2">Foto</label>
+      <input type="file" name="homeopathie2" accept="homeopathie2"/>
     </div>
     
     <div class="fieldBox">

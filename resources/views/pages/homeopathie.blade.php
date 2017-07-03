@@ -2,7 +2,9 @@
 
 @section('content')
 
-@include('partials._bannerphoto')
+<div class="bannerPhotoBox">
+    <img src="{{ URL::asset('storage/homeopathies/homeopathie.jpg') }} " class="bannerPhoto" />
+</div>
 
 <div class="contentWrapper">
   <h1 class="mainHeader">{{$homeopathie->title}}</h1>
@@ -12,7 +14,7 @@
   <div class="row">
     <div class="col-md-8">
       <div class="homeopathiePictureContainer">
-        <img src="{{URL::asset('img/placeholder.png')}}" class="homeopathiePicture">
+        <img src="{{ URL::asset('storage/homeopathies/homeopathie2.jpg') }}" class="homeopathiePicture">
       </div>
     </div>
     <div class="col-md-4">

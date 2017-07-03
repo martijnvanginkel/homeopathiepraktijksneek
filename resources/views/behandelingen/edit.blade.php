@@ -2,11 +2,31 @@
 
 @section('content')
 
-<form method="POST" action="{{ route('behandelingen.update', $behandelingen->id) }}">
+<form method="POST" action="{{ route('behandelingen.update', $behandelingen->id) }}" enctype="multipart/form-data">
 
     <div class="fieldBox">
-      <label name="image"></label>
-      <input type="file" name="image" accept="image"/>
+      <label name="behandeling">Banner</label>
+      <input type="file" name="behandeling" accept="behandeling"/>
+    </div>
+    
+    <div class="fieldBox">
+      <label name="behandeling2">Blok 1</label>
+      <input type="file" name="behandeling2" accept="behandeling2"/>
+    </div>
+    
+    <div class="fieldBox">
+      <label name="behandeling3">Blok 2</label>
+      <input type="file" name="behandeling3" accept="behandeling3"/>
+    </div>
+    
+    <div class="fieldBox">
+      <label name="behandeling4">Blok 3</label>
+      <input type="file" name="behandeling4" accept="behandeling4"/>
+    </div>
+
+    <div class="fieldBox">
+      <label name="behandeling5">Blok 4</label>
+      <input type="file" name="behandeling5" accept="behandeling5"/>
     </div>
 
     <div class="fieldBox">

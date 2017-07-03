@@ -9,11 +9,11 @@
   }
 </style>
 
-<form method="POST" action="{{ route('kosten.update', $kosten->id) }}">
+<form method="POST" action="{{ route('kosten.update', $kosten->id) }}" enctype="multipart/form-data">
 
     <div class="fieldBox">
-      <label name="image"></label>
-      <input type="file" name="image" accept="image"/>
+      <label name="kosten"></label>
+      <input type="file" name="kosten" accept="kosten"/>
     </div>
 
     <div class="fieldBox">

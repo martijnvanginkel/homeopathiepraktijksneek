@@ -2,11 +2,16 @@
 
 @section('content')
 
-<form method="POST" action="{{ route('praktijk.update', $praktijk->id) }}">
+<form method="POST" action="{{ route('praktijk.update', $praktijk->id) }}" enctype="multipart/form-data">
 
     <div class="fieldBox">
-      <label name="image"></label>
-      <input type="file" name="image" accept="image"/>
+      <label name="praktijk">Banner</label>
+      <input type="file" name="praktijk" accept="praktijk"/>
+    </div>
+
+    <div class="fieldBox">
+      <label name="praktijk2">Foto</label>
+      <input type="file" name="praktijk2" accept="praktijk2"/>
     </div>
 
     <div class="fieldBox">

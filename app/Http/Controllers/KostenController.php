@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Kosten;
+use File;
 
 class KostenController extends Controller
 {
@@ -38,6 +39,22 @@ class KostenController extends Controller
     $kosten->prijs03 = $request->prijs03;
 
     $kosten->save();
+
+    if($request->hasFile('kosten')){
+      if(file_exists( public_path() . '/storage/kostens/' . 'kosten.jpg')) {
+        
+        File::Delete(public_path() . '/storage/kostens/' . 'kosten.jpg');
+        $file = request()->file('kosten');
+        $file->storeAs('kostens/', 'kosten.jpg', 'public');
+        
+
+      }else{
+        
+        $file = request()->file('kosten');
+        $file->storeAs('kostens/', 'kosten.jpg', 'public');
+        
+      }
+    }
 
     return redirect()->route('kosten.edit', $kosten->id);
   }
