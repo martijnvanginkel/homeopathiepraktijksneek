@@ -22,7 +22,7 @@
     <div class="col-lg-4" >
       <div class="behandelingenBlock">
         <div class="behandelingPhotoBox">
-          <img src="{{ URL::asset('storage/behandelings/behandeling2.jpg') }} " class="behandelingPhoto" style="max-width:150px">          
+          <img src="{{ URL::asset('storage/behandelings/behandeling2.jpg') }} " class="behandelingPhoto">          
         </div>
         <h1 class="mainHeader">{{$behandelingen->blockOneTitle}}</h1>
           <p>{!! substr(nl2br(e($behandelingen->blockOneInfo)), 0, $blockTextLength) !!} {!! strlen($behandelingen->blockOneInfo) > $blockTextLength ? "..." : "" !!}</p>
