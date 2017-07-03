@@ -21,9 +21,11 @@
   <div class="row">
     <div class="col-lg-4" >
       <div class="behandelingenBlock">
+
         <div class="behandelingPhotoBox">
-          <img src="{{ URL::asset('storage/behandelings/behandeling2.jpg') }} " class="behandelingPhoto">          
+          <img src="{{ URL::asset('storage/behandelings/behandeling2.jpg') }}" class="behandelingPhoto" />          
         </div>
+
         <h1 class="mainHeader">{{$behandelingen->blockOneTitle}}</h1>
           <p>{!! substr(nl2br(e($behandelingen->blockOneInfo)), 0, $blockTextLength) !!} {!! strlen($behandelingen->blockOneInfo) > $blockTextLength ? "..." : "" !!}</p>
           <a href="/behandeling_1" class="leesmeerButton">Lees meer</a>
@@ -32,7 +34,7 @@
     <div class="col-lg-4" >
       <div class="behandelingenBlock">
         <div class="behandelingPhotoBox">
-          <img src="{{ URL::asset('storage/behandelings/behandeling3.jpg') }} " class="behandelingPhoto">          
+          <img src="{{ URL::asset('storage/behandelings/behandeling3.jpg') }} " class="behandelingPhoto" />          
         </div>
         <h1 class="mainHeader">{{$behandelingen->blockTwoTitle}}</h1>
           <p>{!! substr(nl2br(e($behandelingen->blockTwoInfo)), 0, $blockTextLength) !!} {!! strlen($behandelingen->blockTwoInfo) > $blockTextLength ? "..." : "" !!}</p>
