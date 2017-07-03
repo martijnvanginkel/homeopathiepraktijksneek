@@ -67,15 +67,7 @@ table{
   position:relative;
   width:100%;
   max-height:300px;
-  max-width:200px;
   overflow-y: hidden;
-}
-
-.behandelingPhoto{
-  max-width:100%;
-  max-height:100%;
-  width:inherit;
-  height:inherit;
 }
 
 .behandelingPhotoBox{
@@ -83,6 +75,13 @@ table{
   max-width:200px;
   overflow-y: hidden;
 }
+.behandelingPhoto{
+  max-width:100%;
+  max-height:100%;
+  width:inherit;
+  height:inherit;
+}
+
 
 /* Menu */
 
@@ -212,14 +211,14 @@ table{
 
 .homeopathiePictureContainer{
   position:relative;
-  width:60%;
+  width:80%;
   text-align:center;
 }
 
 .homeopathiePicture{
   width:inherit;
   height:inherit;
-  max-height:300px;
+  max-height:400px;
   margin:30px auto;
 }
 
