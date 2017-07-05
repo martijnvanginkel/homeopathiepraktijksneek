@@ -59,6 +59,7 @@ table{
 .bannerPhoto{
   max-width:100%;
   max-height:100%;
+  height:100%;
   width:inherit;
   height:inherit;
 }
@@ -71,10 +72,10 @@ table{
 }
 
 .behandelingPhotoBox{
-  max-height:150px;
-  max-width:100%;
+  position:relative;
+  width:100%;
+  max-height:200px;
   overflow-y: hidden;
-  overflow-x:hidden;
 }
 .behandelingPhoto{
   max-width:100%;
@@ -82,7 +83,6 @@ table{
   width:inherit;
   height:inherit;
 }
-
 
 /* Menu */
 
@@ -109,6 +109,13 @@ table{
   margin:20px 0 40px 0;
   font-size:24px;
 }
+
+@media screen and (max-width:1024px){
+   .menuWrapper h1 {
+     font-size:10pt; 
+   }
+}
+
 
 .menuWrapper h1 a{
   text-decoration:none;
@@ -185,10 +192,40 @@ table{
   transform:translateY(-50%);
 }
 
+#indexBannerTextBox h1{
+  font-size:30pt;
+}
+
 #indexBannerTextBox h2{
-  font-size:24px;
+  font-size:20pt;
   font-style:italic;
 }
+
+@media screen and (max-width:480px){
+   #indexBannerTextBox {
+     top:15%; 
+   }
+   #indexBannerTextBox h1{
+     font-size:16pt; 
+   }
+   #indexBannerTextBox h2{
+     font-size:8pt; 
+   }
+}
+
+@media screen and (max-width:1024px){
+   #indexBannerTextBox {
+     top:15%; 
+   }
+   #indexBannerTextBox h1{
+     font-size:18pt; 
+   }
+   #indexBannerTextBox h2{
+     font-size:12pt; 
+   }
+}
+
+
 
 #selfieContainer{
   position:relative;
@@ -233,8 +270,8 @@ table{
 }
 
 .behandelingenBlock{
-  padding:40px;
-  margin:30px;
+  padding:30px;
+  margin:20px;
   background-color:#FFFFFF;
 }
 
