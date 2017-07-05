@@ -2,7 +2,9 @@
 
 @section('content')
 
-@include('partials._bannerphoto')
+<div class="bannerPhotoBox">
+ 	<img src="{{ URL::asset('storage/behandelings/behandeling5.jpg') }}" class="behandelingPhoto" />
+</div>
 
 <div class="contentWrapper">
 
