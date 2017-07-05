@@ -28,12 +28,12 @@
       </div>
     </div>
 
-    <div class="fieldBox">
+{{--     <div class="fieldBox">
       <div>
         <label name="photoText" class="label">Foto onderschrift:</label>
         <input class="stringInput" name="photoText" value="{{$homeopathie->photoText}}" />
       </div>
-    </div>
+    </div> --}}
 
     <div class="fieldBox">
       <div>
