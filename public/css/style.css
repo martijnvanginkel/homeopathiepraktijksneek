@@ -192,6 +192,7 @@ table{
 #selfieContainer{
   position:relative;
   width:100%;
+  max-width:500px;
   text-align:center;
 }
 
@@ -211,7 +212,7 @@ table{
 
 .homeopathiePictureContainer{
   position:relative;
-  width:80%;
+  width:100%;
   text-align:center;
 }
 

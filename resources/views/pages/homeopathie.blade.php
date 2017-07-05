@@ -12,18 +12,17 @@
   <p>{!! nl2br(e($homeopathie->paragraphOne)) !!}</p>
 
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-5">
       <div class="homeopathiePictureContainer">
         <img src="{{ URL::asset('storage/homeopathies/homeopathie2.jpg') }}" class="homeopathiePicture">
       </div>
     </div>
-    <div class="col-md-4">
-      <hr>
-      <p class="pictureText">{{$homeopathie->photoText}}</p>
+    <div class="col-md-7" style="margin-top:20px">
+      <p>{!! nl2br(e($homeopathie->paragraphTwo)) !!}</p>
     </div>
   </div>
 
-  <p>{!! nl2br(e($homeopathie->paragraphTwo)) !!}</p>
+  
 
 </div>
 
