@@ -2,11 +2,12 @@
   <div class="col-md-12">
 
     <div class="meerontdekkenWrapper">
-      <h1 class="mainHeader">Meer ontdekken?</h1>
+    @foreach($footers as $footer)
+      <h1 class="mainHeader">{{ $footer->footerTitle }}</h1>
       <p class="meerontdekkenText">
-        gula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasel
-        gula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasel
+        {{ $footer->footerText }}
       </p>
+      @endforeach
       <div class="buttonWrapper">
         <a href="/"><div class="mainButton" id="behandelingenButton">Wie ben ik?</div></a>
         <a href="/depraktijk"><div class="mainButton" id="contactButton">De praktijk</div></a>

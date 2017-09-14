@@ -15,10 +15,14 @@ class CreateIndicesTable extends Migration
     {
         Schema::create('indices', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('bannerTitle');
+            $table->string('bannerSubtitle');
             $table->string('title');
             $table->text('paragraphOne')->nullable();
             $table->string('titleTwo')->nullable();
             $table->text('paragraphTwo')->nullable();
+            $table->string('footerTitle')->nullable();
+            $table->text('footerText')->nullable();
             $table->timestamps();
         });
     }

@@ -16,6 +16,20 @@
 
     <div class="fieldBox">
       <div>
+        <label name="bannerTitle" class="label">Banner titel:</label>
+        <input class="stringInput" name="bannerTitle" value="{{$index->bannerTitle}}" />
+      </div>
+    </div>
+
+        <div class="fieldBox">
+      <div>
+        <label name="bannerSubtitle" class="label">Banner ondertitel:</label>
+        <input class="stringInput" name="bannerSubtitle" value="{{$index->bannerSubtitle}}" />
+      </div>
+    </div>
+
+    <div class="fieldBox">
+      <div>
         <label name="title" class="label">Titel:</label>
         <input class="stringInput" name="title" value="{{$index->title}}" />
       </div>
@@ -41,6 +55,22 @@
         <textarea class="textInput" name="paragraphTwo" rows="10">{{$index->paragraphTwo}}</textarea>
       </div>
     </div>
+    <!-- Meer ontdekken -->
+    <div class="fieldBox">
+      <div>
+        <label name="footerTitle" class="label">Footer titel:</label>
+        <input class="stringInput" name="footerTitle" value="{{$index->footerTitle}}" />
+      </div>
+    </div>
+
+    <div class="fieldBox">
+      <div>
+        <label name="footerText" class="label">Footer tekst:</label>
+        <textarea class="textInput" name="footerText" rows="10">{{$index->footerText}}</textarea>
+      </div>
+    </div>
+
+
 
     <div class="fieldBox">
       <div>

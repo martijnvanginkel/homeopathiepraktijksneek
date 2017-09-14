@@ -24,9 +24,13 @@ class IndexController extends Controller
       $index = Index::first();
 
       $index->title = $request->title;
+      $index->bannerTitle = $request->bannerTitle;
+      $index->bannerSubtitle = $request->bannerSubtitle;
       $index->paragraphOne = $request->paragraphOne;
       $index->titleTwo = $request->titleTwo;
       $index->paragraphTwo = $request->paragraphTwo;
+      $index->footerTitle = $request->footerTitle;
+      $index->footerText = $request->footerText;
 
       $index->save();
 

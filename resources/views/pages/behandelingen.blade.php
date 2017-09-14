@@ -18,8 +18,8 @@
 </div>
 
 <div id="behandelingenWrapper" style="background-color:#ADD8E6">
-  <div class="row">
-    <div class="col-lg-4" >
+  <div class="row no-mar-pad">
+    <div class="col-lg-4 no-mar-pad" >
       <div class="behandelingenBlock">
 
         <div class="behandelingPhotoBox">
@@ -31,7 +31,7 @@
           <a href="/behandeling_1" class="leesmeerButton">Lees meer</a>
       </div>
     </div>
-    <div class="col-lg-4" >
+    <div class="col-lg-4 no-mar-pad" >
       <div class="behandelingenBlock">
         <div class="behandelingPhotoBox">
           <img src="{{ URL::asset('storage/behandelings/behandeling3.jpg') }} " class="behandelingPhoto" />          
@@ -41,7 +41,7 @@
           <a href="/behandeling_2" class="leesmeerButton">Lees meer</a>
       </div>
     </div>
-    <div class="col-lg-4" >
+    <div class="col-lg-4 no-mar-pad" >
       <div class="behandelingenBlock">
         <div class="behandelingPhotoBox">
           <img src="{{ URL::asset('storage/behandelings/behandeling4.jpg') }} " class="behandelingPhoto">          
@@ -53,8 +53,8 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-4">
+  <div class="row no-mar-pad">
+    <div class="col-lg-4 no-mar-pad">
       <div class="behandelingenBlock">
         <div class="behandelingPhotoBox">
           <img src="{{ URL::asset('storage/behandelings/behandeling5.jpg') }} " class="behandelingPhoto">          

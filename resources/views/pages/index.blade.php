@@ -2,10 +2,10 @@
 
 @section('content')
 
-<div class="bannerPhotoBox">
+<div class="indexBannerPhotoBox">
   <div id="indexBannerTextBox">
-    <h1>Homeopathiepraktijk Sneek</h1>
-    <h2>Kom in je kracht</h2>
+    <h1>{{ $index->bannerTitle }}</h1>
+    <h2>{{ $index->bannerSubtitle }}</h2>
   </div>
     <img src="{{ URL::asset('storage/indexes/index.jpg') }} " id="indexBannerPhoto"/>
 </div>

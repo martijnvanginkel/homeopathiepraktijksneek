@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Index;
+use View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,6 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $footers = Index::all();
+
+        View::share('footers', $footers);
+
         \Blade::setEchoFormat('nl2br(e(%s))');
     }
 
