@@ -10,7 +10,7 @@
       @endforeach
       <div class="buttonWrapper">
         <a href="/"><div class="mainButton" id="behandelingenButton">Wie ben ik?</div></a>
-        <a href="/depraktijk"><div class="mainButton" id="contactButton">De praktijk</div></a>
+        <a href="/praktijk"><div class="mainButton" id="contactButton">De praktijk</div></a>
       </div>
     </div>
 

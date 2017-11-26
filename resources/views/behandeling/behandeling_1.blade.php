@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="bannerPhotoBox">
- 	<img src="{{ URL::asset('storage/behandelings/behandeling2.jpg') }}" class="behandelingPhoto" />
+ 	<img src="{{ URL::asset('storage/behandelings/behandeling2.jpg') }}" class="bannerPhoto" />
 </div>
 
 <div class="contentWrapper">
@@ -12,6 +12,7 @@
 	<p>{{ $behandelingen->blockOneInfo }}</p>
 
 </div>
+
 
 @include('partials._meerontdekken2')
 

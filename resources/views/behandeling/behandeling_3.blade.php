@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="bannerPhotoBox">
- 	<img src="{{ URL::asset('storage/behandelings/behandeling4.jpg') }}" class="behandelingPhoto" />
+ 	<img src="{{ URL::asset('storage/behandelings/behandeling4.jpg') }}" class="bannerPhoto" />
 </div>
 
 <div class="contentWrapper">
