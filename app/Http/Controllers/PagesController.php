@@ -29,7 +29,7 @@ class PagesController extends Controller{
   public function getBehandelingen()
   {
     $behandelingen = Behandelingen::first();
-    $blockTextLength = 120;
+    $blockTextLength = 90;
 
     return view('pages.behandelingen',compact('behandelingen', 'blockTextLength'));
   }
