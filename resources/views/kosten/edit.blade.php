@@ -26,7 +26,7 @@
     <div class="fieldBox">
       <div>
         <label name="paragraph" class="label">Paragraaf:</label>
-        <textarea class="textInput" name="paragraph" rows="10">{{$kosten->paragraph}}</textarea>
+        <textarea class="textInput" name="paragraph" rows="10">{!! str_replace("<br />", "", nl2br(e($kosten->paragraph))) !!}</textarea>
       </div>
     </div>
 

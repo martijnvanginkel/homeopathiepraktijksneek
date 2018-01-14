@@ -24,7 +24,7 @@
     <div class="fieldBox">
       <div>
         <label name="paragraphOne" class="label">Paragraaf 1:</label>
-        <textarea class="textInput" name="paragraphOne" rows="10">{{$praktijk->paragraphOne}}</textarea>
+        <textarea class="textInput" name="paragraphOne" rows="10">{!! str_replace("<br />", "", nl2br(e($praktijk->paragraphOne))) !!}</textarea>
       </div>
     </div>
 
@@ -38,7 +38,7 @@
     <div class="fieldBox">
       <div>
         <label name="paragraphTwo" class="label">Paragraaf 2:</label>
-        <textarea class="textInput" name="paragraphTwo" rows="10">{{$praktijk->paragraphTwo}}</textarea>
+        <textarea class="textInput" name="paragraphTwo" rows="10">{!! str_replace("<br />", "", nl2br(e($praktijk->paragraphTwo))) !!}</textarea>
       </div>
     </div>
 

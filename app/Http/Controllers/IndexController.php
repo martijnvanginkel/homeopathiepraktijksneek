@@ -12,6 +12,8 @@ class IndexController extends Controller
     {
       $index = Index::first();
 
+      //str_replace("<br />", "", nl2br(e(Index::first())));
+
       return view('/index.edit')->with('index', $index);
     }
 
@@ -22,6 +24,10 @@ class IndexController extends Controller
       ));
 
       $index = Index::first();
+
+     // str_replace('<br />', PHP_EOL, $index);
+
+      //$index = preg_replace("/\n(?:\n)+/",'</p><p>', $index)
 
       $index->title = $request->title;
       $index->bannerTitle = $request->bannerTitle;

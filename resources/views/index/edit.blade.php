@@ -17,56 +17,56 @@
     <div class="fieldBox">
       <div>
         <label name="bannerTitle" class="label">Banner titel:</label>
-        <input class="stringInput" name="bannerTitle" value="{{$index->bannerTitle}}" />
+        <input class="stringInput" name="bannerTitle" value="{{ $index->bannerTitle }}" />
       </div>
     </div>
 
         <div class="fieldBox">
       <div>
         <label name="bannerSubtitle" class="label">Banner ondertitel:</label>
-        <input class="stringInput" name="bannerSubtitle" value="{{$index->bannerSubtitle}}" />
+        <input class="stringInput" name="bannerSubtitle" value="{{ $index->bannerSubtitle }}" />
       </div>
     </div>
 
     <div class="fieldBox">
       <div>
         <label name="title" class="label">Titel:</label>
-        <input class="stringInput" name="title" value="{{$index->title}}" />
+        <input class="stringInput" name="title" value="{{ $index->title }}" />
       </div>
     </div>
 
     <div class="fieldBox">
       <div>
         <label name="paragraphOne" class="label">Paragraaf 1:</label>
-        <textarea class="textInput" name="paragraphOne" rows="10">{{$index->paragraphOne}}</textarea>
+        <textarea class="textInput" name="paragraphOne" rows="10">{!! str_replace("<br />", "", nl2br(e($index->paragraphOne))) !!}</textarea>
       </div>
     </div>
 
     <div class="fieldBox">
       <div>
         <label name="titleTwo" class="label">Titel 2:</label>
-        <input class="stringInput" name="titleTwo" value="{{$index->titleTwo}}" />
+        <input class="stringInput" name="titleTwo" value="{{ $index->titleTwo }}" />
       </div>
     </div>
 
     <div class="fieldBox">
       <div>
         <label name="paragraphTwo" class="label">Paragraaf 2:</label>
-        <textarea class="textInput" name="paragraphTwo" rows="10">{{$index->paragraphTwo}}</textarea>
+        <textarea class="textInput" name="paragraphTwo" rows="10">{!! str_replace("<br />", "", nl2br(e($index->paragraphTwo))) !!}</textarea>
       </div>
     </div>
     <!-- Meer ontdekken -->
     <div class="fieldBox">
       <div>
         <label name="footerTitle" class="label">Footer titel:</label>
-        <input class="stringInput" name="footerTitle" value="{{$index->footerTitle}}" />
+        <input class="stringInput" name="footerTitle" value="{{ $index->footerTitle }}" />
       </div>
     </div>
 
     <div class="fieldBox">
       <div>
         <label name="footerText" class="label">Footer tekst:</label>
-        <textarea class="textInput" name="footerText" rows="10">{{$index->footerText}}</textarea>
+        <textarea class="textInput" name="footerText" rows="10">{!! str_replace("<br />", "", nl2br(e($index->footerText))) !!}</textarea>
       </div>
     </div>
 

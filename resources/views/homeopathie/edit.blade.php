@@ -24,7 +24,7 @@
     <div class="fieldBox">
       <div>
         <label name="paragraphOne" class="label">Paragraaf 1:</label>
-        <textarea class="textInput" name="paragraphOne" rows="10">{{$homeopathie->paragraphOne}}</textarea>
+        <textarea class="textInput" name="paragraphOne" rows="10">{!! str_replace("<br />", "", nl2br(e($homeopathie->paragraphOne))) !!}</textarea>
       </div>
     </div>
 
@@ -38,7 +38,7 @@
     <div class="fieldBox">
       <div>
         <label name="paragraphTwo" class="label">Paragraaf 2:</label>
-        <textarea class="textInput" name="paragraphTwo" rows="10">{{$homeopathie->paragraphTwo}}</textarea>
+        <textarea class="textInput" name="paragraphTwo" rows="10">{!! str_replace("<br />", "", nl2br(e($homeopathie->paragraphTwo))) !!}</textarea>
       </div>
     </div>
 

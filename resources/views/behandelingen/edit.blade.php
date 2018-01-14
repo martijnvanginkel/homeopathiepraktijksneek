@@ -38,7 +38,7 @@
     <div class="fieldBox">
       <div>
         <label name="paragraphOne" class="label">Paragraaf 1:</label>
-        <textarea class="textInput" name="paragraphOne" rows="10">{{$behandelingen->paragraphOne}}</textarea>
+        <textarea class="textInput" name="paragraphOne" rows="10">{!! str_replace("<br />", "", nl2br(e($behandelingen->paragraphOne))) !!}</textarea>
       </div>
     </div>
 
@@ -52,7 +52,7 @@
     <div class="fieldBox">
       <div>
         <label name="blockOneInfo" class="label">Box 1 informatie:</label>
-        <textarea class="textInput" name="blockOneInfo" rows="10">{{$behandelingen->blockOneInfo}}</textarea>
+        <textarea class="textInput" name="blockOneInfo" rows="10">{!! str_replace("<br />", "", nl2br(e($behandelingen->blockOneInfo))) !!}</textarea>
       </div>
     </div>
 
@@ -66,7 +66,7 @@
     <div class="fieldBox">
       <div>
         <label name="blockTwoInfo" class="label">Box 2 informatie:</label>
-        <textarea class="textInput" name="blockTwoInfo" rows="10">{{$behandelingen->blockTwoInfo}}</textarea>
+        <textarea class="textInput" name="blockTwoInfo" rows="10">{!! str_replace("<br />", "", nl2br(e($behandelingen->blockTwoInfo))) !!}</textarea>
       </div>
     </div>
 
@@ -80,7 +80,7 @@
     <div class="fieldBox">
       <div>
         <label name="blockThreeInfo" class="label">Box 3 informatie:</label>
-        <textarea class="textInput" name="blockThreeInfo" rows="10">{{$behandelingen->blockThreeInfo}}</textarea>
+        <textarea class="textInput" name="blockThreeInfo" rows="10">{!! str_replace("<br />", "", nl2br(e($behandelingen->blockThreeInfo))) !!}</textarea>
       </div>
     </div>
 
@@ -94,7 +94,7 @@
     <div class="fieldBox">
       <div>
         <label name="blockFourInfo" class="label">Box 4 informatie:</label>
-        <textarea class="textInput" name="blockFourInfo" rows="10">{{$behandelingen->blockFourInfo}}</textarea>
+        <textarea class="textInput" name="blockFourInfo" rows="10">{!! str_replace("<br />", "", nl2br(e($behandelingen->blockFourInfo))) !!}</textarea>
       </div>
     </div>
     <div class="fieldBox">
