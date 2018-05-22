@@ -34,7 +34,9 @@
 
 </div>
 
-<iframe id="googlemap" style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2398.5473581043466!2d5.658782251572926!3d53.04647187981881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8f031fb5c3fbb%3A0x95fa2a3ee6f52348!2sSlufter+20%2C+8602+DA+Sneek!5e0!3m2!1snl!2snl!4v1499000523463" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe id="googlemap" style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2399.523838031608!2d5.636843515437471!3d53.02892220614109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8ee264efdd4c9%3A0xa37d511a3ed399c9!2sDe+Kemphaan+12%2C+8601+ZH+Sneek!5e0!3m2!1snl!2snl!4v1526999125405" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+{{-- <iframe id="googlemap" style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2398.5473581043466!2d5.658782251572926!3d53.04647187981881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8f031fb5c3fbb%3A0x95fa2a3ee6f52348!2sSlufter+20%2C+8602+DA+Sneek!5e0!3m2!1snl!2snl!4v1499000523463" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> --}}
 
 
 @include('partials._meerontdekken2')

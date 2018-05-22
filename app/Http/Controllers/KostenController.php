@@ -38,6 +38,10 @@ class KostenController extends Controller
     $kosten->duur03 = $request->duur03;
     $kosten->prijs03 = $request->prijs03;
 
+    $kosten->behandeling04 = $request->behandeling04;
+    $kosten->duur04 = $request->duur04;
+    $kosten->prijs04 = $request->prijs04;
+
     $kosten->save();
 
     if($request->hasFile('kosten')){
