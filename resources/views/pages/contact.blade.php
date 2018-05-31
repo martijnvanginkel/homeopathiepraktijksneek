@@ -24,11 +24,15 @@
   </div>
   <div class="col-md-7">
     <ul class="contactInput">
-      <li><h1 class="contactHeader">Contactformulier</h1></li>
-      <li><input type="text" name="naam" placeholder="Naam"></li>
-      <li><input type="text" name="emailadres" placeholder="E-mailadres"></li>
-      <li><textarea name="bericht" placeholder="Bericht" style="height:150px"></textarea></li>
-      <li><a href="#"><div id="contactFormButton">Verzenden</div></a></li>
+      <li><h1 class="contactHeader">{{ $contact->title }}</h1></li>
+{{--       <li><input type="text" name="naam" placeholder="Naam"></li>
+      <li><input type="text" name="emailadres" placeholder="E-mailadres"></li> --}}
+      {{-- <li><textarea name="bericht" placeholder="Bericht" style="height:150px"></textarea></li> --}}
+
+
+    <li><p>{!! nl2br(e($contact->times)) !!}</p></li>
+
+{{--       <li><a href="#"><div id="contactFormButton">Verzenden</div></a></li> --}}
     </ul>
   </div>
 

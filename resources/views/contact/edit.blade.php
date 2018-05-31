@@ -37,6 +37,20 @@
       </div>
     </div>
 
+    <div class="fieldBox">
+      <div>
+        <label name="title" class="label">Titel:</label>
+        <input class="stringInput" name="title" value="{{$contact->title}}" />
+      </div>
+    </div>
+
+    <div class="fieldBox">
+      <div>
+        <label name="times" class="label">Tijden:</label>
+        <textarea class="textInput" name="times" rows="10">{!! str_replace("<br />", "", nl2br(e($contact->times))) !!}</textarea>
+      </div>
+    </div>
+
 
     <div class="fieldBox">
       <div>
